@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendLine - Professional News</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Lightbox Image" id="lightboxImage">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Subscribe to TrendLine</h2>
+        <p>Stay updated with the latest trends and news.</p>
+        <form action="#">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- Modal Video -->
+    <div class="modal-video" id="modalVideo">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>TrendLine News</h1>
+        <p>Your Daily Source for the Latest Trends</p>
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Breaking News, Daily Updates</h1>
+                <p>Stay informed with our comprehensive coverage.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sports.html">Sports</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="technology.html">Technology</a>
+        <a href="#" id="openModal">Subscribe</a>
+    </nav>
+
+    <!-- Notifications -->
+    <div class="notifications" id="notifications">
+        <div class="notification notification-success">Subscription Successful!</div>
+        <div class="notification notification-error">Error subscribing. Please try again.</div>
+        <div class="notification notification-warning">Please enter a valid email address.</div>
+    </div>
+
+    <main>
+        <!-- Carousel Section -->
+        <section class="carousel">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/3184645/pexels-photo-3184645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Slide 1">
+                    <h3>Global Market Insights</h3>
+                    <p>Analyzing the latest trends in global markets.</p>
+                </div>
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/3182756/pexels-photo-3182756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Slide 2">
+                    <h3>Tech Innovations</h3>
+                    <p>Discover the newest breakthroughs in technology.</p>
+                </div>
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/3184648/pexels-photo-3184648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Slide 3">
+                    <h3>Health and Wellness</h3>
+                    <p>Tips and news to keep you healthy and happy.</p>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature">
+                <i class="fas fa-newspaper"></i>
+                <h4>Comprehensive Coverage</h4>
+                <p>Get all the latest news from around the globe.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h4>Market Analysis</h4>
+                <p>In-depth analysis of market trends and data.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headphones-alt"></i>
+                <h4>Podcasts</h4>
+                <p>Listen to our expert discussions and interviews.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-camera-retro"></i>
+                <h4>Photo Galleries</h4>
+                <p>Visual stories through our curated photo galleries.</p>
+            </div>
+        </section>
+
+        <!-- Trending News Section -->
+        <section class="trending-news section">
+            <h2>🔥 Trending Today</h2>
+            <p>We bring you the latest news from around the world, with exclusive insights and trends that matter.</p>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-grid">
+            <article>
+                <img src="https://images.pexels.com/photos/50732/pexels-photo-50732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Nepal Flood Disaster" class="lightbox-trigger" data-src="https://images.pexels.com/photos/50732/pexels-photo-50732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <h3>Nepal Flood Disaster</h3>
+                <p>Nepal is facing severe floods that have claimed over 100 lives. Rescue operations continue as the nation deals with unprecedented rainfall.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/3065598/pexels-photo-3065598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hezbollah Leadership Shift" class="lightbox-trigger" data-src="https://images.pexels.com/photos/3065598/pexels-photo-3065598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <h3>Hezbollah Leadership Shift</h3>
+                <p>Following the death of Hassan Nasrallah, Hashem Safieddine is expected to take over Hezbollah's leadership amidst regional tensions.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/230578/pexels-photo-230578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Trump at Alabama-Georgia Game" class="lightbox-trigger" data-src="https://images.pexels.com/photos/230578/pexels-photo-230578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <h3>Donald Trump's Welcome at Alabama-Georgia Game</h3>
+                <p>Donald Trump received a grand welcome at the Alabama-Georgia football game, sparking chants of 'USA' from the crowd.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sustainable Fashion" class="lightbox-trigger" data-src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <h3>Sustainable Fashion on the Rise</h3>
+                <p>As more brands focus on sustainability, the fashion industry is shifting towards eco-friendly practices and materials.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <!-- Additional News Articles -->
+            <!-- ... (Repeat similar articles to increase content) -->
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Gallery Image 1" class="lightbox-trigger" data-src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg">
+                <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" alt="Gallery Image 2" class="lightbox-trigger" data-src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg">
+                <img src="https://images.pexels.com/photos/3015568/pexels-photo-3015568.jpeg" alt="Gallery Image 3" class="lightbox-trigger" data-src="https://images.pexels.com/photos/3015568/pexels-photo-3015568.jpeg">
+                <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Gallery Image 4" class="lightbox-trigger" data-src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg">
+                <img src="https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg" alt="Gallery Image 5" class="lightbox-trigger" data-src="https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg">
+                <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg" alt="Gallery Image 6" class="lightbox-trigger" data-src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg">
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section">
+            <h2>What Our Readers Say</h2>
+            <div class="testimonial">
+                <p>"TrendLine provides the most accurate and timely news. I can't imagine my mornings without it!"</p>
+                <span class="author">- Jane Doe</span>
+            </div>
+            <div class="testimonial">
+                <p>"The in-depth analyses and quality journalism are unmatched. Highly recommended!"</p>
+                <span class="author">- John Smith</span>
+            </div>
+            <div class="testimonial">
+                <p>"I love the interactive content and the variety of topics covered. Keeps me engaged all day."</p>
+                <span class="author">- Emily Johnson</span>
+            </div>
+        </section>
+
+        <!-- Features Carousel -->
+        <section class="featured-products section">
+            <h2>Featured Products</h2>
+            <div class="featured-products">
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg" alt="Product 1">
+                    <h4>Smartphone X</h4>
+                    <p>The latest Smartphone X with cutting-edge features and sleek design.</p>
+                    <div class="price">$999</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" alt="Product 2">
+                    <h4>Noise-Cancelling Headphones</h4>
+                    <p>Experience immersive sound with our premium noise-cancelling headphones.</p>
+                    <div class="price">$299</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg" alt="Product 3">
+                    <h4>4K LED TV</h4>
+                    <p>Enjoy stunning visuals with our state-of-the-art 4K LED TV.</p>
+                    <div class="price">$799</div>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Additional Products -->
+                <!-- ... -->
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline section">
+            <h2>Our Journey</h2>
+            <div class="container left">
+                <div class="content">
+                    <h3>Founded in 2010</h3>
+                    <p>TrendLine was established with the mission to provide reliable and timely news to readers worldwide.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>Launch of Website</h3>
+                    <p>Our website was launched, offering a comprehensive platform for news, articles, and multimedia content.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h3>Mobile App Release</h3>
+                    <p>In 2015, we released our mobile app to provide news on the go.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>International Expansion</h3>
+                    <p>TrendLine expanded its reach to international markets, catering to a global audience.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h3>Introduction of Podcasts</h3>
+                    <p>We launched a series of podcasts to engage with our audience through audio content.</p>
+                </div>
+            </div>
+            <!-- Additional Timeline Events -->
+            <!-- ... -->
+        </section>
+
+        <!-- Community Section -->
+        <section class="community-section section">
+            <h2>Join the Conversation</h2>
+            <p>Become part of the TrendLine community! Submit your news stories, participate in polls, and engage with like-minded individuals in our forums.</p>
+            <ul>
+                <li><a href="#">Join Our Community Forum</a></li>
+                <li><a href="#">Submit a Story</a></li>
+                <li><a href="#">Participate in Polls</a></li>
+                <li><a href="#">Connect on Social Media</a></li>
+            </ul>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="newsletter-section section">
+            <h2>Get Personalized News</h2>
+            <p>Sign up for our daily or weekly newsletter to receive personalized news updates straight to your inbox.</p>
+            <form action="#" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- SEO and Evergreen Content Section -->
+        <section class="seo-section section">
+            <h2>In-Depth Evergreen Content</h2>
+            <p>Looking for more than just breaking news? Explore our evergreen content that stays relevant all year round, from tech explainers to in-depth guides.</p>
+            <ul>
+                <li><a href="#">The Future of AI: What You Need to Know</a></li>
+                <li><a href="#">Sustainable Fashion: Trends to Watch in 2024</a></li>
+                <li><a href="#">Understanding Cryptocurrency</a></li>
+                <li><a href="#">Health Benefits of a Balanced Diet</a></li>
+            </ul>
+        </section>
+
+        <!-- Transparency and Ethics Section -->
+        <section class="ethics-section section">
+            <h2>Transparency in Reporting</h2>
+            <p>We are committed to ethical journalism. All our sources are cited, and we are transparent about our reporting practices.</p>
+            <ul>
+                <li><a href="#">Our Ethics Policy</a></li>
+                <li><a href="#">How We Fact-Check</a></li>
+                <li><a href="#">Corrections and Updates</a></li>
+                <li><a href="#">Source Guidelines</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info section">
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Our Location</h4>
+                <p>123 TrendLine Street, News City, Country</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-phone-alt"></i>
+                <h4>Contact Us</h4>
+                <p>+1 (234) 567-8901</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>info@trendline.com</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-clock"></i>
+                <h4>Working Hours</h4>
+                <p>Mon - Fri: 9am - 6pm</p>
+            </div>
+        </section>
+
+        <!-- Blog Posts Section -->
+        <section class="blog-posts section">
+            <h2>Latest Blog Posts</h2>
+            <div class="post">
+                <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Blog Post 1" class="lightbox-trigger" data-src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg">
+                <h3>The Rise of Remote Work</h3>
+                <p>Remote work has transformed the modern workplace. Here's what the future holds.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" alt="Blog Post 2" class="lightbox-trigger" data-src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg">
+                <h3>Exploring Sustainable Energy</h3>
+                <p>Discover the advancements in sustainable energy and their impact on our planet.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="https://images.pexels.com/photos/3184406/pexels-photo-3184406.jpeg" alt="Blog Post 3" class="lightbox-trigger" data-src="https://images.pexels.com/photos/3184406/pexels-photo-3184406.jpeg">
+                <h3>Top 10 Tech Gadgets of 2024</h3>
+                <p>Stay ahead with the latest tech gadgets that are making waves this year.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="https://images.pexels.com/photos/3184637/pexels-photo-3184637.jpeg" alt="Blog Post 4" class="lightbox-trigger" data-src="https://images.pexels.com/photos/3184637/pexels-photo-3184637.jpeg">
+                <h3>Health Benefits of Mindfulness</h3>
+                <p>Mindfulness isn't just a trend—it's a way to improve your mental and physical health.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <!-- Additional Blog Posts -->
+            <!-- ... -->
+        </section>
+
+        <!-- Blog Sidebar -->
+        <aside class="blog-sidebar section">
+            <h3>Search</h3>
+            <div class="search-box">
+                <input type="text" placeholder="Search..." aria-label="Search">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <h3>Categories</h3>
+            <ul class="categories">
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Entertainment</a></li>
+            </ul>
+            <h3>Tags</h3>
+            <ul class="tags">
+                <li><a href="#" class="tag">AI</a></li>
+                <li><a href="#" class="tag">Sustainability</a></li>
+                <li><a href="#" class="tag">Remote Work</a></li>
+                <li><a href="#" class="tag">Gadgets</a></li>
+                <li><a href="#" class="tag">Mindfulness</a></li>
+            </ul>
+            <h3>Newsletter</h3>
+            <div class="newsletter">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </div>
+        </aside>
+
+        <!-- Blog Comments -->
+        <section class="blog-comments section">
+            <h3>Recent Comments</h3>
+            <div class="comment">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h4>Michael Brown</h4>
+                        <p>Great insights on remote work trends! Looking forward to more articles.</p>
+                    </div>
+                    <button class="delete-btn">&times;</button>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h4>Sarah Davis</h4>
+                        <p>Informative post about AI advancements. Thanks for sharing!</p>
+                    </div>
+                    <button class="delete-btn">&times;</button>
+                </div>
+            </div>
+            <!-- Additional Comments -->
+            <!-- ... -->
+        </section>
+
+        <!-- Blog Tags -->
+        <section class="blog-tags section">
+            <h3>Popular Tags</h3>
+            <a href="#" class="tag">AI</a>
+            <a href="#" class="tag">Sustainability</a>
+            <a href="#" class="tag">Remote Work</a>
+            <a href="#" class="tag">Gadgets</a>
+            <a href="#" class="tag">Mindfulness</a>
+            <a href="#" class="tag">Health</a>
+            <a href="#" class="tag">Technology</a>
+            <a href="#" class="tag">Business</a>
+            <a href="#" class="tag">Entertainment</a>
+        </section>
+
+        <!-- Blog Pagination -->
+        <section class="blog-pagination section">
+            <a href="#" class="page-number">1</a>
+            <a href="#" class="page-number">2</a>
+            <a href="#" class="page-number">3</a>
+            <span class="current-page">4</span>
+            <a href="#" class="page-number">5</a>
+            <a href="#" class="page-number">6</a>
+        </section>
+
+        <!-- Blog Subscribe -->
+        <section class="blog-subscribe section">
+            <h3>Subscribe to Our Blog</h3>
+            <p>Never miss an update. Subscribe to receive the latest posts directly to your inbox.</p>
+            <form action="#">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Animated Background Section -->
+        <section class="animations-demo section">
+            <h2>Animations Demo</h2>
+            <div class="animation-box">
+                <div class="content">
+                    <h4>Fade In</h4>
+                    <p>Elements gradually appear.</p>
+                </div>
+            </div>
+            <div class="animation-box">
+                <div class="content">
+                    <h4>Scale Up</h4>
+                    <p>Elements grow on hover.</p>
+                </div>
+            </div>
+            <div class="animation-box">
+                <div class="content">
+                    <h4>Rotate</h4>
+                    <p>Continuous rotation animation.</p>
+                </div>
+            </div>
+            <div class="animation-box">
+                <div class="content">
+                    <h4>Bounce</h4>
+                    <p>Bouncing effect for attention.</p>
+                </div>
+            </div>
+            <!-- Additional Animation Boxes -->
+            <!-- ... -->
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form section">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailContact">Email</label>
+                    <input type="email" id="emailContact" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Progress Bars Section -->
+        <section class="progress-bar-container section">
+            <h2>Our Expertise</h2>
+            <div class="progress-bar" style="width: 90%;">90%</div>
+            <div class="progress-bar" style="width: 75%;">75%</div>
+            <div class="progress-bar" style="width: 85%;">85%</div>
+            <div class="progress-bar" style="width: 95%;">95%</div>
+        </section>
+
+        <!-- Counters Section -->
+        <section class="counter section">
+            <h2>Our Achievements</h2>
+            <div class="counter">1000+</div>
+            <div class="counter">500+</div>
+            <div class="counter">250+</div>
+            <div class="counter">50+</div>
+        </section>
+
+        <!-- Maps Section -->
+        <section class="maps section">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..."></iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TrendLine | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+        <div class="social-icons">
+            <a href="#" class="tooltip" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="tooltip" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="tooltip" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="tooltip" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- Lightbox Script -->
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+
+        lightboxTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                lightboxImage.src = trigger.dataset.src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+    </script>
+
+    <!-- Modal Script -->
+    <script>
+        const modal = document.getElementById('modal');
+        const openModalBtn = document.getElementById('openModal');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        openModalBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('active');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target == modal) {
+                modal.classList.remove('active');
+            }
+        });
+    </script>
+
+    <!-- Carousel Script -->
+    <script>
+        const slides = document.querySelectorAll('.carousel .slide');
+        const prevBtn = document.getElementById('prevSlide');
+        const nextBtn = document.getElementById('nextSlide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${100 * (i - index)}%)`;
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+            showSlide(currentSlide);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+            showSlide(currentSlide);
+        });
+
+        // Initialize
+        showSlide(currentSlide);
+        setInterval(() => {
+            nextBtn.click();
+        }, 5000);
+    </script>
+
+    <!-- Back to Top Script -->
+    <script>
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- Newsletter Form Script -->
+    <script>
+        const newsletterForm = document.getElementById('newsletterForm');
+        const notifications = document.getElementById('notifications');
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = newsletterForm.querySelector('input[type="email"]').value;
+            if (validateEmail(email)) {
+                showNotification('subscription-success');
+                newsletterForm.reset();
+            } else {
+                showNotification('subscription-error');
+            }
+        });
+
+        function validateEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
+            return re.test(String(email).toLowerCase());
+        }
+
+        function showNotification(type) {
+            const notification = document.querySelector(`.notification-${type}`);
+            if (notification) {
+                notification.style.display = 'block';
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 4000);
+            }
+        }
+    </script>
+
+    <!-- Blog Comments Script -->
+    <script>
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const comment = button.closest('.comment');
+                comment.remove();
+            });
+        });
+    </script>
+
+    <!-- Animation Boxes Script -->
+    <script>
+        // Additional JavaScript for animation boxes or other interactive elements can be added here
+    </script>
+
+    <!-- Preferences for Reduced Motion -->
+    <script>
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        if (prefersReducedMotion.matches) {
+            document.body.classList.add('reduce-motion');
+        }
+    </script>
+</body>
+</html>
